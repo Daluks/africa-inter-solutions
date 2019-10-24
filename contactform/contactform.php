@@ -69,7 +69,9 @@
     $message_content .= '<strong>' . $email_title . '</strong> ' . $email . '<br>';
     $message_content .= '<strong>' . $message_title . '</strong> ' . nl2br($message);
 
-    $sendemail = mail($contact_email_to, $subject_title . ' ' . $subject, $message_content, $headers);
+    // $sendemail = mail($contact_email_to, $subject_title . ' ' . $subject, $message_content, $headers);
+
+    $sendemail = imap_mail($contact_email_to, $subject_title . ' ' . $subject, $message_content, $headers);
 
     if( $sendemail ) {
       echo 'OK';
