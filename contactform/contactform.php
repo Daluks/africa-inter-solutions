@@ -8,7 +8,7 @@
 /***************** Configuration *****************/
 
   // Replace with your real receiving email address
-  $contact_email_to = "info@aisol.co.za";
+  $contact_email_to = "info@updateit.co.za";
 
   // Title prefixes
   $subject_title = "Contat Form Message:";
